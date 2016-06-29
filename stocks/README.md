@@ -2,15 +2,15 @@
   This demo shows how to use OpenWhisk to process stock data
   - Shows how to create a trigger `stockTrigger`
   - Shows how to create an action `processStocks`
-  - Shows how to create a rule between the trigger `stockTrigger` and action `processStocks`
+  - Shows how to create a rule between the trigger `stockTrigger` and the action `processStocks`
 
 ### Requirements
-  Access to deploy [OpenWhisk](https://github.com/openwhisk/openwhisk) instance
-  The OpenWhisk CLI configured with correct `apihost`, `namespace`, and `auth`
+  - Access to deploy [OpenWhisk](https://github.com/openwhisk/openwhisk) instance
+  - The OpenWhisk CLI configured with correct `apihost`, `namespace`, and `auth`
 
 ### Usage
   ```
-  Usage: ./wskproject.sh [--install,--test,--update,--reinstall]
+  Usage: ./wskproject.sh [--install, --test, --update, --reinstall]
   ```
 
 ### Testing

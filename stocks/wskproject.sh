@@ -14,7 +14,7 @@ CURRENT_NAMESPACE=`wsk property get --namespace | awk '{print $3}'`
 echo "Current namespace is $CURRENT_NAMESPACE."
 
 function usage() {
-  echo -e "${YELLOW}Usage: $0 [--install,--test,--update,--reinstall]${NC}"
+  echo -e "${YELLOW}Usage: $0 [--install, --test, --update, --reinstall]${NC}"
 }
 
 function install() {
@@ -76,7 +76,7 @@ function test() {
   echo "Fire Trigger via curl using HTTP POST"
   curl -d '{ "IBM": "200" }' "https://openwhisk.ng.bluemix.net/api/v1/namespaces/$CURRENT_NAMESPACE/triggers/stockTrigger" -XPOST -H 'Content-Type: application/json' -H "Authorization: Basic $(wsk property get --auth | awk '{print $3}' | base64)"
   echo ""
-  
+
   echo -e "${GREEN}Test Complete${NC}"
 }
 
