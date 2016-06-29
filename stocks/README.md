@@ -17,5 +17,5 @@
   Run `wsk activation poll` in one terminal then run `./wskproject.sh --test` in another terminal window.
 
 ### Learn how the project works
-  - Read [wskproject.sh](./skproject.sh) to learn how to use the wsk cli, and use curl to access the OpenWhisk API
+  - Read [wskproject.sh](./wskproject.sh) to learn how to use the wsk cli, and use curl to access the OpenWhisk API
   - Modify [processStocks.js](./processStocks.js) action to adjust and play :-)
