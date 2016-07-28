@@ -5,12 +5,12 @@
   - Shows how to create a rule between the trigger `stockTrigger` and the action `processStocks`
 
 ### Requirements
-  - Access to deploy [OpenWhisk](https://github.com/openwhisk/openwhisk) instance
+  - Access to a running [OpenWhisk](https://github.com/openwhisk/openwhisk) instance
   - The OpenWhisk CLI configured with correct `apihost`, `namespace`, and `auth`
 
 ### Usage
   ```
-  Usage: ./wskproject.sh [--install, --test, --update, --reinstall]
+  Usage: ./wskproject.sh [--install, --test, --update, --reinstall, --uninstall]
   ```
 
 ### Testing
@@ -18,4 +18,4 @@
 
 ### Learn how the project works
   - Read [wskproject.sh](./wskproject.sh) to learn how to use the wsk cli, and use curl to access the OpenWhisk API
-  - Modify [processStocks.js](./processStocks.js) action to adjust and play :-)
+  - Modify [processStocks.js](./processStocks.js) action to adjust and play :-). Remember to run `./wskproject.sh --update` to push your code to OpenWhisk
