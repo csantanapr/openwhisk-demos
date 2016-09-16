@@ -1,15 +1,18 @@
 {
-  "name": "email",
+  "name": "sendEmail",
   "version": "1.0.0",
   "description": "",
   "main": "sendEmail.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
-  "keywords": [],
+  "keywords": ["openwhisk"],
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "nodemailer": "2.5.0"
+  },
+  "engines" : { 
+    "node" : "6.2.0"   
   }
 }

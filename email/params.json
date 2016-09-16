@@ -1,0 +1,9 @@
+{
+  "username": "XXXXXX@gmail.com",
+  "password": "XXXXXXXXXXXXXXXXXX",
+  "from": "\"OpenWhisk  📫\" <wsk@example.com>",
+  "to": "XXXXXXXX@gmail.com",
+  "subject": "Hello from OpenWhisk ✔",
+  "text": "Hello world in text 😹, if you pass html text doesn't get use",
+  "html": "<b>Hello world in html 😹</b>"
+}

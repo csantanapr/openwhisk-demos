@@ -1,4 +1,8 @@
 // jshint esversion: 6
+/*
+ sendEmail
+*/
+const nodemailer = require('nodemailer');
 function main({
   username: username,
   password: password,
@@ -9,7 +13,7 @@ function main({
   text: text,
   html: html
 }) {
-  const nodemailer = require('nodemailer');
+
   const url = `smtps://${username}:${password}@${smtp}`;
   const transporter = nodemailer.createTransport(url);
   
@@ -34,17 +38,12 @@ function main({
   return new Promise(sendEmail);
 }
 
-// Test locally
-// $ node sendEmail.js
-/* 
-main({
-  username: 'user@gmail.com',
-  password: 'xxxxxxxxx',
-  from: '"OpenWhisk  📫" <wsk@example.com>',
-  to: 'user@gmail.com',
-  subject: 'Hello from OpenWhisk ✔',
-  text: 'Hello world in text 😹',
-  html: '<b>Hello world in html 😹</b>'
-});
+/*
+Only required for testing locally, running in OpenWhisk this get's ignored
+Export main function only if its being use as a module (i.e. require(./sendEmail.js))
 */
+if(require.main !== module){
+  module.exports = main;
+}
+
 
