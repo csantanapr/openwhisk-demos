@@ -22,6 +22,7 @@
 ## Testing Locally
   Make sure you are using same version of node as OpenWhisk NodeJS environment.
   You can use [](nvm) to easily install and switch node versions
+  
   ```bash
   # switch to the specific node version 
   nvm install 6.2.0
@@ -30,7 +31,7 @@
   6.2.0
   ```
 
-  Install dependencies using npm
+  Install dependencies using npm, use exact versioning for npm packages
   ```bash
   npm install
   ```
