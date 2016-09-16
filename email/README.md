@@ -19,7 +19,7 @@
 
 ### Testing
 
-## Testing Locally
+#### Testing Locally
   Make sure you are using same version of node as OpenWhisk NodeJS environment.
   You can use [nvm](https://github.com/creationix/nvm) to easily install and switch node versions
   
@@ -56,7 +56,7 @@
   npm test
   ```
 
-## Testing using OpenWhisk
+#### Testing using OpenWhisk
   Run `wsk activation poll` in one terminal then run `./wskproject.sh --test <username> <password> <to> <subject> <text>` in another terminal window.
 
 ### Learn how the project works
