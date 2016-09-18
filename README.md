@@ -6,7 +6,7 @@ Simple OpenWhisk demos to demonstrate different patterns
 
 - [stocks](./stocks) Process Stocks using a Severless action
 - [sendEmail](./sendEmail) Send Email using a Serverless action
-- [searchVideos](./searchVideos) Search Videos a Serverless action
+- [searchVideo](./searchVideo) Search Videos a Serverless action
 - More to come, stay tuned....
 
 ### License
