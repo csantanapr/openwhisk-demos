@@ -1,0 +1,8 @@
+{
+  "query": "OpenWhisk",
+  "part": "snippet",
+  "maxResults": 10,
+  "type": "video",
+  "key": "AIzaSyD-AqEfjuN-0jHjb795G1yPg-HR8H_Xi9g",
+  "baseURl": "https://www.googleapis.com/youtube/v3/search"
+}
