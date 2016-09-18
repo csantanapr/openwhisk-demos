@@ -5,7 +5,7 @@
 Simple OpenWhisk demos to demonstrate different patterns
 
 - [stocks](./stocks)
-- [email](./email)
+- [sendEmail](./sendEmail)
 - TBD
 
 

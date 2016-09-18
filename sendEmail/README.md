@@ -1,4 +1,4 @@
-## OpenWhisk Stock Trigger project
+## OpenWhisk send Email Demo
   This demo shows how to use OpenWhisk to send email 
   - Shows how to create a trigger `sendEmailTrigger`
   - Shows how to create an action `sendEmailAction`
