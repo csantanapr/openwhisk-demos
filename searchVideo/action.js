@@ -17,7 +17,7 @@ function main({
     request(url, function (error, response, body) {
       if (!error && response.statusCode == 200) {
         console.log('success video search');
-        resolve({ "result": JSON.parse(body) });
+        resolve(JSON.parse(body));
       } else {
         console.error('failed video search');
         console.error('error:', error);
