@@ -2,7 +2,7 @@
 /*
  sendEmail
 */
-const nodemailer = require('nodemailer');
+var nodemailer = require('nodemailer');
 function main({
   username: username,
   password: password,

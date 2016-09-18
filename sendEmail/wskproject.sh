@@ -66,7 +66,7 @@ function update() {
   echo -e "${YELLOW}Updating OpenWhisk project"
   
   echo "Update actios rules..."
-  wsk action update sendEmail sendEmail.js
+  wsk action update sendEmailAction sendEmail.js
 
   echo -e "${GREEN}Update Complete${NC}"
   #wsk list
