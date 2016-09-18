@@ -28,7 +28,7 @@ function main({
     },(error, info) => {
         if (error) {
           console.error(`error sending email ${error}`);
-          reject(error);
+          reject(JSON.stringify(error));
         } else {
           console.log(`Message sent:  ${info.response}`);
           resolve({ info: info });
