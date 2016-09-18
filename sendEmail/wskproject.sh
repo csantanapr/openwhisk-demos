@@ -118,7 +118,7 @@ install
 update
 ;;
 "--test" )
-test $2 $3 $4 $5
+test $2 $3 $4 $5 $6
 ;;
 * )
 usage
