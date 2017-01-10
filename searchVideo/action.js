@@ -36,11 +36,9 @@ function main({
 
 
 /*
-Only required for testing locally, running in OpenWhisk this get's ignored
 Export main function only if its being use as a module (i.e. require(./sendEmail.js))
 */
-if (require.main !== module) {
-  module.exports = main;
-}
+exports.main = main;
+
 
 
