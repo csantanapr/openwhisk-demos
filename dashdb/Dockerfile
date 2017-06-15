@@ -1,4 +1,4 @@
-FROM openwhisk/nodejs6action
+FROM csantanapr/nodejs6action:whisk-build-4642
 
 RUN apt-get install -y python make g++ && \
     npm install ibm_db@2.0.0 && \
