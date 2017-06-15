@@ -17,6 +17,9 @@ OPENWHISK_ACTION_SOURCE=`cat action.zip | base64`
 
 # Create action, binary=true using a zip
 echo Deploying OpenWhisk action $OPENWHISK_ACTION_NAME using image $OPENWHISK_ACTION_DOCKER_IMAGE to host $OPENWHISK_HOST
-curl -u $OPENWHISK_AUTH -d '{"namespace":"_","name":"'"$OPENWHISK_ACTION_NAME"'","exec":{"kind":"blackbox","code":"'"$OPENWHISK_ACTION_SOURCE"'","image":"'"$OPENWHISK_ACTION_DOCKER_IMAGE"'"}}' -X PUT -H "Content-Type: application/json" https://$OPENWHISK_HOST/api/v1/namespaces/_/actions/$OPENWHISK_ACTION_NAME?overwrite=true -v
+curl -u $OPENWHISK_AUTH -d '{"namespace":"_","name":"'"$OPENWHISK_ACTION_NAME"'","exec":{"kind":"blackbox","code":"'"$OPENWHISK_ACTION_SOURCE"'","image":"'"$OPENWHISK_ACTION_DOCKER_IMAGE"'"}}' -X PUT -H "Content-Type: application/json" https://$OPENWHISK_HOST/api/v1/namespaces/_/actions/$OPENWHISK_ACTION_NAME?overwrite=true
+echo
+echo Action deploy run with:
+echo wsk action invoke $OPENWHISK_ACTION_NAME -r 
 
 

@@ -1,8 +1,10 @@
 FROM openwhisk/nodejs6action
 
-RUN apt-get install -y python make zip g++
-
-RUN npm install --production ibm_db
+RUN apt-get install -y python make g++ && \
+    npm install ibm_db@2.0.0 && \
+    rm node_modules/ibm_db/installer/linuxx64_odbc_cli.tar.gz && \
+    npm cache clean && \
+    apt-get purge -y --auto-remove python make g++
 
 
 
