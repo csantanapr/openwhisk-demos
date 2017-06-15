@@ -17,7 +17,7 @@ docker push user/action-nodejs-ibm-v6
 ```
 Adjust user to match your user name on docker hub
 
-You can skip this step to **experiment** by using a prebuilt image `csantanapr/action-nodejs-ibm-v6`, for production you must use your own image
+You can skip this step to **experiment** by using a prebuilt image [csantanapr/action-nodejs-ibm-v6](https://hub.docker.com/r/csantanapr/action-nodejs-ibm-v6/tags), for production you must use your own image
 
 ## Deploy action
 Setup the `wsk` CLI and configure for your OpenWhisk host
