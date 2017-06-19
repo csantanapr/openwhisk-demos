@@ -26,6 +26,11 @@ Setup the `wsk` CLI and configure for your OpenWhisk host
 
 Run `./deploy.sh` to build the action.zip with `index.js` inside and deploy the action to OpenWhisk specifying your docker image wich includes `ibm_db` package
 
+```
+./deloy.sh
+```
+
+## Customizing deployent
 You can override some settings in deploy.sh using environment variables:
 ```
 OPENWHISK_ACTION_NAME
@@ -35,7 +40,13 @@ OPENWHISK_AUTH
 ```
 For example to deploy using your own image
 ```
-OPENWHISK_ACTION_DOCKER_IMAGE="user/action-nodejs-ibm-v6" ./deploy.sh
+OPENWHISK_ACTION_DOCKER_IMAGE="user/action-nodejs-ibm-v6" \
+./deploy.sh
+```
+
+You can also pass as arguments the name of the action, an existing zip archive, and the name of the image
+```
+./deloy.sh myaction myaction.zip csantanapr/action-nodejs-ibm-v6
 ```
 
 Adjust the `./deloy.sh` as necessary for more customizations
