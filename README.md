@@ -7,6 +7,7 @@ Simple OpenWhisk demos to demonstrate different patterns
 - [stocks](./stocks) Process Stocks using a Severless action
 - [sendEmail](./sendEmail) Send Email using a Serverless action
 - [searchVideo](./searchVideo) Search Videos a Serverless action
+- [db2Action](./dashdb) Leverage [IBM DB2](https://console.bluemix.net/catalog/services/db2-on-cloud-sql-db-formerly-dashdb-tx) using a Serverless action
 - More to come, stay tuned....
 
 ### License
