@@ -1,7 +1,7 @@
 # DB2 with OpenWhisk
 
 OpenWhisk has a limit of 48MB for zip actions
-The npm package for dashb `ibm_db` it's too large (~80MB) and makes the action zip go over the limit.
+The npm package for dashdb `ibm_db` it's too large (~80MB) and makes the action zip go over the limit.
 
 Gladly OpenWhisk supports Docker Actions.
 You can upload a docker image to docker hub and then create an action that uses this image.
