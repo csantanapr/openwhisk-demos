@@ -13,7 +13,7 @@ npm intall
 
 ## Build 
 
-Build the bundle using webpac
+Build the bundle using webpack
 ```
 npm start
 ```
