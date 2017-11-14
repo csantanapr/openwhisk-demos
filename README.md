@@ -9,6 +9,8 @@ Simple OpenWhisk demos to demonstrate different patterns
 - [searchVideo](./searchVideo) Search Videos a Serverless action
 - [db2Action](./db2Action) Leverage [IBM DB2](https://console.bluemix.net/catalog/services/db2-on-cloud-sql-db-formerly-dashdb-tx) using a Serverless action
 - More to come, stay tuned....
+- [webpack](./webpack) Using webpack to bundle npm dependencies with Serverless Action
+- [watson_discovery](./watson_discovery) How to use Watson Discovery and deploy with webpack 
 
 ### License
 
