@@ -1,0 +1,14 @@
+{
+  "name": "db2-async-await",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "service": "bx service create dashDB Entry db2",
+    "bind": "bx wsk service bind dashDB my-action",
+    "deploy": "bx wsk action update my-action index.js --kind nodejs:8",
+    "test": "bx wsk action invoke my-action -r"
+  },
+  "license": "Apache 2.0"
+}
+
