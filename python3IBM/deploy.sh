@@ -22,4 +22,7 @@ bx wsk action invoke myCustomerFormSeq -p payload "Muy buen servicio" -p custome
 #bx wsk action invoke setupDB -b
 #bx wsk action get setupDB parameters
 
-#bx wsk activation get --last
+bx wsk action update pandas pandas.py --kind python-jessie:3
+bx wsk action invoke pandas -b
+
+bx wsk activation get --last

@@ -15,4 +15,4 @@ def main(args):
     result = ibm_db.execute(stmt,(customer_id, text, ts_val))
     if not result:
         return {"err": "error :" + statement}
-    return {"result": f"stored feed back {text} for customer {customer_id} at {ts_val}"}
+    return {"result": f"stored feed back {text} from customer {customer_id} at {ts_val}"}
