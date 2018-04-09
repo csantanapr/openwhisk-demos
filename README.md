@@ -12,6 +12,7 @@ Simple OpenWhisk demos to demonstrate different patterns
 - [watson_discovery](./watson_discovery) How to use Watson Discovery and deploy with webpack
 - [db2AsyncAwait](./db2AsyncAwait) How to use the db2 npm package with nodejs:8 async/await.
 - [python3IBM](./python3IBM) How to use the python 3 runtime ubuntu based on IBM Functions
+- [api_path_params](./api_path_params) How to create an API to handle path parameters using OpenWhisk
 - More to come, stay tuned....
 
 ### License

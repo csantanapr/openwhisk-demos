@@ -1,0 +1,17 @@
+{
+  "name": "getContact",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "deploy": "npm run deploy_action && npm run deploy_api",
+    "deploy_action": "bx wsk action update getContact dist/bundle.js --kind nodejs:8 --web true",
+    "deploy_api": "bx wsk api create --apiname contacts /api/v1 /contacts/{id} get getContact --response-type http",
+    "start": "npm run build && npm run deploy"
+  },
+  "dependencies": {
+    "url-pattern": "^1.0.3"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}
