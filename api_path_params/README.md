@@ -53,7 +53,16 @@ Action: /csantana@us.ibm.com_demo/getContact
 ## Call API
 Open a browser, or use tool of choice using the `URL` from previous step
 ```
-curl https://<apigatewayhost>/<tenantid>/api/v1/contacts/{id}
+curl https://<apigatewayhost>/<tenantid>/api/v1/contacts/1234
+```
+Output: Found contact from data store with id `1234` return resource with content-type `application/json` and statusCode `200`
+```json
+{
+  "firstName": "Carlos",
+  "lastName": "Santana",
+  "twitter": "csantanapr",
+  "id": "123"
+}
 ```
 
 ## Bonus Points
