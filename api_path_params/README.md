@@ -12,9 +12,14 @@ function main({__ow_path:path}) {
 ```
 
 ## Install dependencies
-```
-npm install
-```
+1. Install and Configure CLI `bx wsk` using [IBM Cloud CLI Functions plugin](https://console.bluemix.net/docs/openwhisk/bluemix_cli.html#cloudfunctions_cli)
+    ```
+    bx wsk list
+    ```
+2. Install nodejs deps:
+    ```
+    npm install
+    ```
 
 ## TLDR;
 ```
