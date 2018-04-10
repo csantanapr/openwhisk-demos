@@ -66,7 +66,7 @@ Output: Found contact from data store with id `1234` return resource with conten
   "firstName": "Carlos",
   "lastName": "Santana",
   "twitter": "csantanapr",
-  "id": "123"
+  "id": "1234"
 }
 ```
 

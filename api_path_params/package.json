@@ -6,8 +6,9 @@
     "deploy": "npm run deploy_action && npm run deploy_api",
     "deploy_action": "bx wsk action update getContact dist/bundle.js --kind nodejs:8 --web true",
     "deploy_api": "bx wsk api create --apiname contacts /api/v1 /contacts/{id} get getContact --response-type http",
-    "start": "npm run build && npm run deploy",
-    "api": "bx wsk api list contacts /contacts/{id} get -f"
+    "api": "bx wsk api list contacts /contacts/{id} get -f",
+    "start": "npm run build && npm run deploy && npm run api"
+
   },
   "dependencies": {
     "url-pattern": "^1.0.3"
