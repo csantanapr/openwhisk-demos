@@ -13,6 +13,7 @@ Simple OpenWhisk demos to demonstrate different patterns
 - [db2AsyncAwait](./db2AsyncAwait) How to use the db2 npm package with nodejs:8 async/await.
 - [python3IBM](./python3IBM) How to use the python 3 runtime ubuntu based on IBM Functions
 - [api_path_params](./api_path_params) How to create an API to handle path parameters using OpenWhisk
+- [extend-ibmpython](./extend-ibmpython) How to extend base python docker image runtime using a python zip action with mulitple files
 - More to come, stay tuned....
 
 ### License

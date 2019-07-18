@@ -1,0 +1,4 @@
+python-dotenv
+softlayer
+cloudant
+futures
